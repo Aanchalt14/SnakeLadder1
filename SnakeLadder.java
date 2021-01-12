@@ -19,8 +19,10 @@ public class SnakeLadder {
    
     
     static void play() {
-    	while(position != 100)
+        int count =0;    	
+        while(position != 100)
     	{
+          count++;
          int number=(int)(Math.random()*(4-1))+1;  
          switch (number) {
     	  case 1:
@@ -51,8 +53,7 @@ public class SnakeLadder {
              System.out.println("New Position: " +position);
          }
      }
-        System.out.println("Winner");
-       
+     System.out.println("you won !!! and your total count is : " +count);       
       
 }
    	
